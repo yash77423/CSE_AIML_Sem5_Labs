@@ -5,13 +5,17 @@ import matplotlib.pyplot as plt
 src_img = cv2.imread("kid.jpg", cv2.IMREAD_COLOR)
 
 # Display the original image
-plt.imshow(src_img[:,:,::-1])
+cv2.imshow('Original',src_img)
+cv2.waitKey(0)
 
 # Draw a rectangle (thickness is a positive integer)
 imageRectangle = src_img.copy()
 
-cv2.rectangle(imageRectangle, (500, 100), (700,600), (255, 0, 255), thickness=5, lineType=cv2.LINE_8)
+rect = cv2.rectangle(imageRectangle, (500, 100), (700,600), (255, 0, 255), thickness=5, lineType=cv2.LINE_8)
 
 # Display the image
-plt.imshow(imageRectangle[:,:,::-1])
+cv2.imshow('Rectangle',rect)
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
 
