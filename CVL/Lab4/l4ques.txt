@@ -1,0 +1,9 @@
+Implement the following using OpenCV in Python from scratch (i.e., without using built-in functions).
+Also display the original and modified image
+1. Bilateral blurring
+2. Sobel Operator
+3. Laplacian Filter
+4. Unsharp Masking
+5. Gradient of an image
+6. Detect edges in an image (same as 2)
+7. Implement Canny edge detection algorithm
