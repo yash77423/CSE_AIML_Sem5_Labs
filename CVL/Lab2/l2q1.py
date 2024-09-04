@@ -18,13 +18,13 @@ for i in range(0, height - 1):
 
         # Negate each channel by subtracting it from 255
 
-        # 1st index contains red pixel
+        # 1st index contains blue pixel
         pixel[0] = 255 - pixel[0]
 
         # 2nd index contains green pixel
         pixel[1] = 255 - pixel[1]
 
-        # 3rd index contains blue pixel
+        # 3rd index contains red pixel
         pixel[2] = 255 - pixel[2]
 
         # Store new values in the pixel
